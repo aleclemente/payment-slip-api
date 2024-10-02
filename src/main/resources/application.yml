@@ -1,0 +1,19 @@
+server:
+  error:
+    include-exception: false
+    include-stacktrace: never
+    include-message: always
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    url: jdbc:postgresql://localhost:5432/paymentSlip
+    username: admin
+    password: 123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
